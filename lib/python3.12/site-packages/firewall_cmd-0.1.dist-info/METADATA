@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: firewall-cmd
+Version: 0.1
+Summary: A test package - please do not use right now
+Home-page: https://github.com/shay-legit/firewall-cmd
+Author: Shay Elmualem
+Author-email: shay@legitsecurity.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# firewall-cmd
