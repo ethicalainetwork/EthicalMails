@@ -63,3 +63,13 @@ Verify that your firewall is allowing connections on port 465:
 Copysudo ufw status
 
 
+
+Change the permissions of the key file to be more secure:
+sudo chmod 600 /home/engli/proj/mails/datas.world.key
+
+Change the ownership of both files to the user that the SMTP server runs as (probably root if you're using sudo):
+sudo chown root:root /home/engli/proj/mails/datas.world.crt /home/engli/proj/mails/datas.world.key
+
+Update your .env file to use the full paths to these files:
+CopyTLS_CERT_FILE=/home/engli/proj/mails/datas.world.crt
+TLS_KEY_FILE=/home/engli/proj/mails/datas.world.ke
